@@ -1,0 +1,141 @@
+<!-- Module 1: Introduction -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 250px;
+            background: #0078D4;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            background: #005a9e;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background: #003f7f;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+        footer{
+            background-color: #003f7f;
+            color: wheat;
+            padding: 20px;
+            margin-top: 20px;
+            
+        }
+        .logo img{
+            width: 200px;
+        }
+    </style>
+    <script>
+          function markCompleted(module) {
+            localStorage.setItem(module, 'completed');
+            document.getElementById(module).innerText = 'Completed';
+            document.getElementById(module).disabled = true;
+        }
+
+        function checkCompletion(module) {
+            if (localStorage.getItem(module) === 'completed') {
+                document.getElementById(module).innerText = 'Completed';
+                document.getElementById(module).disabled = true;
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            checkCompletion('introCompleted');
+        });
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="logo">
+            <img src="logo vt web white.png" alt="">
+        </nav>
+        <h2>Modules</h2>
+        <a href="index.html">Home</a>
+        <a href="psintro.html"> Introduction</a>
+        <a href="psmod1.html">Module 1: Photoshop & Workspace Navigation</a>
+        <a href="psmod2.html">Module 2: Layers & Selection Tools</a>
+        <a href="psmod3.html">Module 3: Typography & Text Effects for Poster</a>
+        <a href="psmod4.html">Module 4: Color & Composition Techniques</a>
+        <a href="psmod5.html">Module 5: Adding Graphics, Icons & Images</a>
+        <a href="psmod6.html">Module 6: Finalizing & Exporting Posters</a>
+    </div>
+    <div class="content">
+        <h1>Introduction to Photoshop for Poster Design</h1>
+        <p><strong>Unit 1</strong> Hands-on Project    </p>
+        <p>Photoshop is a powerful graphic design tool that enables users to create visually appealing designs, manipulate images, and craft stunning posters. Whether you are a beginner or an aspiring graphic designer, learning Photoshop will open doors to creative opportunities in branding, marketing, and digital content creation.</p>
+        
+        <p>VersaTech Solutions is proud to offer a structured Photoshop training program focused on poster design. This course is designed for beginners who want to quickly gain practical skills in Photoshop while working on real-world projects. By the end of this course, learners will be able to create eye-catching posters for businesses, events, and personal branding.</p>
+        
+        <p>Throughout this course, participants will receive hands-on experience in using Photoshop tools, working with layers, typography, colors, and effects. Each module includes practical tasks and exercises to ensure that learners can confidently apply their skills to professional design projects.</p>
+        
+        <p>Whether you are a student, entrepreneur, or marketing professional, mastering Photoshop for poster design will help you create impactful visuals that communicate your message effectively.</p>
+        
+        <p>Join us in this exciting journey and start designing professional posters with Photoshop today!</p>
+        
+        <h2>Learning Objectives</h2>
+        <ul>
+            <li>Understand the Photoshop interface and essential tools.</li>
+
+            <li>  Learn how to create, edit, and enhance images for poster design.</li>
+                
+            <li>  Master text and typography techniques to create compelling messages.
+            </li>
+            <li>  Apply color theory and blending modes for visually appealing posters.</li>
+                
+            <li>  Work with layers, masks, and effects to add depth and creativity to designs.</li>
+                
+            <li>   Export and optimize posters for digital and print media.
+                
+                </li>
+        </ul>
+        <label>
+            <input type="checkbox"> Mark as Completed
+        </label>
+
+        
+            
+            
+
+        
+        <footer>
+            <p>&copy; 2025 VersaTech Solutions Learning Platform. All rights reserved.</p>
+            <p>Tel: 0712165017</p> 
+            <p>Email: info@versatechsolutions.co.ke</p>
+            
+        </footer>
+    </div>
+    
+</body>
+</html>
+
+<!-- More module pages will follow the same layout structure -->

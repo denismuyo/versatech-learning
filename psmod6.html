@@ -1,0 +1,119 @@
+<!-- Module 1: Introduction -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 250px;
+            background: #0078D4;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            background: #005a9e;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background: #003f7f;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo img{
+            width: 200px;
+        }
+    </style>
+    <script>
+          function markCompleted(module) {
+            localStorage.setItem(module, 'completed');
+            document.getElementById(module).innerText = 'Completed';
+            document.getElementById(module).disabled = true;
+        }
+
+        function checkCompletion(module) {
+            if (localStorage.getItem(module) === 'completed') {
+                document.getElementById(module).innerText = 'Completed';
+                document.getElementById(module).disabled = true;
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            checkCompletion('introCompleted');
+        });
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="logo">
+            <img src="logo vt web white.png" alt="">
+        </nav>
+        <h2>Modules</h2>
+        <a href="index.html">Home</a>
+        <a href="psintro.html"> Introduction</a>
+        <a href="psmod1.html">Module 1: Photoshop & Workspace Navigation</a>
+        <a href="psmod2.html">Module 2: Layers & Selection Tools</a>
+        <a href="psmod3.html">Module 3: Typography & Text Effects for Poster</a>
+        <a href="psmod4.html">Module 4: Color & Composition Techniques</a>
+        <a href="psmod5.html">Module 5: Adding Graphics, Icons & Images</a>
+        <a href="psmod6.html">Module 6: Finalizing & Exporting Posters</a>
+    </div>
+    <div class="content">
+        <h1>Module 6: Finalizing & Exporting Posters</h1>
+        <p><strong>Overview:</strong> Learn how to properly save and export your poster for print or digital use.</p>
+        <ul>
+            <li>Checking resolution and image quality</li>
+
+                <li>    Saving in different formats (JPEG, PNG, PDF)</li>
+                
+                    <li>    Optimizing posters for social media or print</li>
+                
+                        <li>   Mocking up posters on real-world backgrounds</li>
+
+        </ul> 
+        <a href="https://youtu.be/OszBQiCdUfY">Click here to watch tutorial </a> <br> <br>
+        <label>
+            <input type="checkbox"> Mark as Completed
+        </label>
+        <h2>Tasks</h2>
+        <ul>
+            <li>Export your poster in high-quality JPEG and PDF formats.</li>
+                <li>    Present your poster on a mockup (e.g., a billboard or flyer).</li>
+            
+        </ul>
+        <label>
+            <input type="checkbox"> Mark as Completed
+        </label>
+        <h2>Submit Your Work</h2>
+        <form action="send_email.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="submission" required>
+            <input type="submit" value="Upload & Send">
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- More module pages will follow the same layout structure -->

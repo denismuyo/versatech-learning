@@ -1,0 +1,160 @@
+<!-- Module 1: Introduction -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 250px;
+            background: #0078D4;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            background: #005a9e;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background: #003f7f;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+        footer{
+            background-color: #003f7f;
+            color: wheat;
+            padding: 20px;
+            margin-top: 20px;
+            
+        }
+        .logo img{
+            width: 200px;
+        }
+    </style>
+    <script>
+          function markCompleted(module) {
+            localStorage.setItem(module, 'completed');
+            document.getElementById(module).innerText = 'Completed';
+            document.getElementById(module).disabled = true;
+        }
+
+        function checkCompletion(module) {
+            if (localStorage.getItem(module) === 'completed') {
+                document.getElementById(module).innerText = 'Completed';
+                document.getElementById(module).disabled = true;
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            checkCompletion('introCompleted');
+        });
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="logo">
+            <img src="logo vt web white.png" alt="">
+        </nav>
+        <h2>Modules</h2>
+        <a href="index.html">Home</a>
+        <a href="intro.html"> Introduction</a>
+        <a href="word.html">Module 1: Microsoft Word</a>
+        <a href="excel.html">Module 2: Microsoft Excel</a>
+        <a href="powerpoint.html">Module 3: Microsoft PowerPoint</a>
+        <a href="outlook.html">Module 4: Microsoft Outlook & Teams</a>
+        <a href="final.html">Module 5: Final Project</a>
+    </div>
+    <div class="content">
+        <h1>Module 3: Microsoft PowerPoint – Presentation Skills </h1>
+        <p><strong>Overview:</strong> Learn the basics of Powerpoint.</p>
+        <p><strong>Unit 1</strong> Creating Engaging Presentations   </p>
+        <ul>
+            <li>Choosing templates and slide layouts  </li>
+            <li>Adding and formatting text, images, and shapes   </li>
+            <li>Using SmartArt and icons for visual appeal    </li>
+            <li> Applying themes and color schemes effectively   </li>
+
+        </ul> 
+        <label>
+            <input type="checkbox"> Mark as Completed
+        </label>
+
+        <p><strong>Unit 2</strong> Advanced PowerPoint Techniques    </p>
+        <ul>
+            <li>Applying transitions and animations</li>
+            <li>Using slide master for consistent formatting </li>
+            <li>Embedding multimedia (videos, audio, charts)   </li>
+            <li> Presenting with confidence using presenter mode </li>
+
+
+        </ul> 
+        <label>
+            <input type="checkbox"> Mark as Completed
+        </label>
+            
+        <p><strong>Unit 3</strong> Advanced Excel Features   </p>
+        <ul>
+            <li>Using PivotTables and PivotCharts  </li>
+            <li>Advanced formulas (IF, VLOOKUP, HLOOKUP, INDEX-MATCH) </li>
+            <li>Data validation and protection    </li>
+            <li>Introduction to Macros and automation</li>
+             
+             
+
+        </ul> 
+        <label>
+            <input type="checkbox"> Mark as Completed
+        </label>
+            
+            
+
+        <h2>Tasks</h2>
+        <ul>
+            <li>Create a 5-slide business presentation on a topic of your choice, including images, 
+                SmartArt, and transitions </li>
+                <li>Deliver a 3-minute presentation using presenter mode  </li>
+            
+        </ul>
+        <label>
+            <input type="checkbox"> Mark as Completed
+        </label>
+        <h2>Submit Your Work</h2>
+        <form action="send_email.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="submission" required>
+            <input type="submit" value="Upload & Send">
+        </form>
+        <footer>
+            <p>&copy; 2025 VersaTech Solutions Learning Platform. All rights reserved.</p>
+            <p>call 0712165017</p>
+            
+        </footer>
+    </div>
+    
+</body>
+</html>
+
+<!-- More module pages will follow the same layout structure -->

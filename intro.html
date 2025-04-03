@@ -1,0 +1,129 @@
+<!-- Module 1: Introduction -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 250px;
+            background: #0078D4;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            background: #005a9e;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background: #003f7f;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+        footer{
+            background-color: #003f7f;
+            color: wheat;
+            padding: 20px;
+            margin-top: 20px;
+            
+        }
+        .logo img{
+            width: 200px;
+        }
+    </style>
+    <script>
+          function markCompleted(module) {
+            localStorage.setItem(module, 'completed');
+            document.getElementById(module).innerText = 'Completed';
+            document.getElementById(module).disabled = true;
+        }
+
+        function checkCompletion(module) {
+            if (localStorage.getItem(module) === 'completed') {
+                document.getElementById(module).innerText = 'Completed';
+                document.getElementById(module).disabled = true;
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            checkCompletion('introCompleted');
+        });
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="logo">
+            <img src="logo vt web white.png" alt="">
+        </nav>
+        <h2>Modules</h2>
+        <a href="index.html">Home</a>
+        <a href="intro.html"> Introduction</a>
+        <a href="word.html">Module 1: Microsoft Word</a>
+        <a href="excel.html">Module 2: Microsoft Excel</a>
+        <a href="powerpoint.html">Module 3: Microsoft PowerPoint</a>
+        <a href="outlook.html">Module 4: Microsoft Outlook & Teams</a>
+        <a href="final.html">Module 5: Final Project</a>
+    </div>
+    <div class="content">
+        <h1>Introduction to Microsoft Office  </h1>
+        <p><strong>Unit 1</strong> Hands-on Project    </p>
+        <p>Microsoft Office is a powerful suite of productivity tools that has become essential in modern workplaces, educational institutions, and personal projects. From word processing and data analysis to dynamic presentations and professional communication, Microsoft Office applications provide users with the tools they need to work efficiently and effectively.</p>
+        
+        <p>VersaTech Solutions is proud to offer a comprehensive Microsoft Office training program designed to equip learners with the skills needed to navigate and utilize these applications with confidence. This course is tailored for beginners and intermediate users who want to enhance their proficiency in Word, Excel, PowerPoint, Outlook, and Teams.</p>
+        
+        <p>Throughout this course, participants will receive hands-on experience in document creation, data management, presentation design, and professional communication. Each module includes practical tasks and exercises that simulate real-world applications, ensuring that learners gain practical knowledge that can be applied in their careers or personal endeavors.</p>
+        
+        <p>Whether you are a student, business professional, or entrepreneur, mastering Microsoft Office will open up new opportunities and increase your efficiency. By the end of the course, participants will be able to create professional documents, analyze and visualize data, deliver engaging presentations, and collaborate effectively using Outlook and Teams.</p>
+        
+        <p>Join us on this learning journey with VersaTech Solutions and take your productivity skills to the next level. Let's get started with an overview of Microsoft Office and its key functionalities.</p>
+        
+        <h2>Learning Objectives</h2>
+        <ul>
+            <li>Understand the purpose of Microsoft Office applications</li>
+            <li>Navigate the interfaces of Word, Excel, PowerPoint, Outlook, and Teams</li>
+            <li>Customize the ribbon and toolbar for efficiency</li>
+        </ul>
+        <label>
+            <input type="checkbox"> Mark as Completed
+        </label>
+
+        
+            
+            
+
+        
+        <footer>
+            <p>&copy; 2025 VersaTech Solutions Learning Platform. All rights reserved.</p>
+            <p>call 0712165017</p>
+            
+        </footer>
+    </div>
+    
+</body>
+</html>
+
+<!-- More module pages will follow the same layout structure -->

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Office Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 250px;
+            background: #0078D4;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            background: #005a9e;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background: #003f7f;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo img{
+            width: 200px;
+        }
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .course-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .course-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .course-btn span {
+            position: relative;
+            z-index: 1;
+        }
+        .graphic-design { background-image: url('graphic-design.jpg'); }
+        .web-dev { background-image: url('web-development.jpg'); }
+        .video-editing { background-image: url('video-editing.jpg'); }
+        .content-creation { background-image: url('content-creation.jpg'); }
+        .social-media { background-image: url('social-media.jpg'); }
+        .digital-marketing { background-image: url('digital-marketing.jpg'); }
+        .coding { background-image: url('coding.jpg'); }
+
+        .start{
+            background-color: #003f7f;
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="logo">
+            <img src="logo vt web white.png" alt="">
+        </nav>
+        <h2>Modules</h2>
+        <a href="index.html">Home</a>
+        <a href="psintro.html"> Introduction</a>
+        <a href="psmod1.html">Module 1: Photoshop & Workspace Navigation</a>
+        <a href="psmod2.html">Module 2: Layers & Selection Tools</a>
+        <a href="psmod3.html">Module 3: Typography & Text Effects for Poster</a>
+        <a href="psmod4.html">Module 4: Color & Composition Techniques</a>
+        <a href="psmod5.html">Module 5: Adding Graphics, Icons & Images</a>
+        <a href="psmod6.html">Module 6: Finalizing & Exporting Posters</a>
+
+    </div>
+    <div class="content">
+        <h1>Welcome to Adobe Photoshop Learning</h1> 
+        <p>Select a module from the left to begin learning. <a class="start" href="psintro.html">Start Learning</a></p>
+        <h2>An overview about Adobe Photoshop </h2> 
+        <p><b>Adobe photoshop Learning Curriculum Overview</b> <br>  <br>
+
+            Adobe Photoshop is a powerful graphic design tool used for creating and editing images, designing posters, social media graphics, and much more. This curriculum focuses on hands-on skills to help learners become proficient in poster design using Photoshop.  
+            <br> <br>
+           <b>Course Modules</b> <br>
+           Introduction to Photoshop – Understanding the interface, tools, and basic functions<br>
+
+           Working with Layers – Managing layers, blending modes, and layer styles<br>
+           
+           Typography & Text Effects – Creating visually appealing text elements<br>
+           
+           Image Editing & Manipulation – Adjusting brightness, contrast, and applying filters<br>
+           
+           Designing a Poster – Combining elements to create professional posters<br>
+           
+           Final Project – Practical application of learned skills by designing a creative poster<br><br>
+           
+           By completing this course, learners will gain hands-on experience in Photoshop, enhancing their design skills for personal and professional use.</p>
+        
+    </div>
+</body>
+</html>
